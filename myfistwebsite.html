@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafiz Abdul Hamid Salifu - Professional Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Hafiz Abdul Hamid Salifu's professional website showcasing his work, skills, and services.">
+    <meta property="og:title" content="Hafiz Abdul Hamid Salifu - Professional Website">
+    <meta property="og:description" content="Hafiz Abdul Hamid Salifu's professional website showcasing his work, skills, and services.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/my-first-website">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+        }
+
+        header img {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #2196F3, #21CBF3);
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        .content-section {
+            padding: 2em 0;
+            background-color: white;
+            margin: 1em 0;
+        }
+
+        .content-section h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        .content-section p, .content-section ul {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        .testimonials, .portfolio {
+            background-color: #e0f7fa;
+            padding: 2em 0;
+            margin: 1em 0;
+        }
+
+        .testimonials h2, .portfolio h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: #00796b;
+            text-align: center;
+        }
+
+        .testimonials p, .portfolio p {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        .portfolio ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .portfolio ul li {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .portfolio ul li:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio ul li img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1>Hafiz Abdul Hamid Salifu</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to My Professional Website</h2>
+            <p>Discover my work, skills, and services.</p>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hafiz Abdul Hamid Salifu, born on September 19, 2000, in Ejisu, Ashanti, Ghana, is a distinguished author, researcher, and political analyst specializing in African politics, environmental governance, and social justice. 
+                He earned a Bachelor of Arts degree from the University of Ghana, where he studied Geography and Political Science. 
+                Salifu's notable work, "Geo-Environmental Political Adaptation," integrates environmental determinism into political ideologies and governance structures in Africa, offering innovative perspectives on how geographic and climatic realities can influence governance to foster stability and sustainable development.</p>
+        </div>
+    </section>
+
+    <section id="services" class="content-section">
+        <div class="container">
+            <h2>Services</h2>
+            <ul>
+                <li>Freelancer</li>
+                <li>Author</li>
+                <li>Policy Analyst</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <p>"Hafiz is an exceptional professional with a deep understanding of African politics and environmental governance. His insights are invaluable." - John Doe</p>
+            <p>"Working with Hafiz has been a transformative experience. His expertise in policy analysis is unparalleled." - Jane Smith</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Check out some of my recent projects and publications.</p>
+            <ul>
+                <li>
+                    <img src="project1.jpg" alt="Project 1">
+                    <p><a href="https://example.com/project1" target="_blank">Project 1</a></p>
+                </li>
+                <li>
+                    <img src="project2.jpg" alt="Project 2">
+                    <p><a href="https://example.com/project2" target="_blank">Project 2</a></p>
+                </li>
+                <li>
+                    <img src="publication1.jpg" alt="Publication 1">
+                    <p><a href="https://example.com/publication1" target="_blank">Publication 1</a></p>
+                </li>
+                <li>
+                    <img src="publication2.jpg" alt="Publication 2">
+                    <p><a href="https://example.com/publication2" target="_blank">Publication 2</a></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="contactName">Name:</label>
+                <input type="text" id="contactName" name="contactName" required>
+                
+                <label for="contactEmail">Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="links" class="content-section">
+        <div class="container">
+            <h2>Professional Links</h2>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/hafizabdulhamidsalifu" target="_blank"><img src="linkedin.png" alt="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://scholar.google.com/citations?user=example" target="_blank"><img src="google-scholar.png" alt="Google Scholar">Google Scholar</a></li>
+                <li><a href="https://github.com/hafizabdulhamidsalifu" target="_blank"><img src="github.png" alt="GitHub">GitHub</a></li>
+                <li><a href="https://www.researchgate.net/profile/Hafiz_Abdul_Hamid_Salifu" target="_blank"><img src="researchgate.png" alt="ResearchGate">ResearchGate</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="account" class="content-section">
+        <div class="container">
+            <h2>Create an Account</h2>
+            <form id="accountForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="help_type">What do you need help with?</label>
+                <select id="help_type" name="help_type" required>
+                    <option value="assignment">Assignment</option>
+                    <option value="tutoring">Tutoring</option>
+                    <option value="thesis">Thesis</option>
+                </select>
+                
+                <label for="details">Details:</label>
+                <textarea id="details" name="details" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hafiz Abdul Hamid Salifu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        document.getElementById('accountForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const helpType = document.getElementById('help_type').value;
+            const details = document.getElementById('details').value;
+
+            if (name && email && password && helpType && details) {
+                // Mock backend service to send confirmation email
+                fetch('https://mock-backend-service.com/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        password: password,
+                        helpType: helpType,
+                        details: details
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Account created successfully! A confirmation email has been sent.');
+                        window.location.href = 'confirmation.html';
+                    } else {
+                        alert('There was an error creating your account. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('There was an error creating your account. Please try again.');
+                });
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const contactName = document.getElementById('contactName').value;
+            const contactEmail = document.getElementById('contactEmail').value;
+            const message = document.getElementById('message').value;
+
+            if (contactName && contactEmail && message) {
+                // Mock backend service to send contact message
+                fetch('https://mock-backend-service.com/send-message', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        contactName: contactName,
+                        contactEmail: contactEmail,
+                        message: message
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Message sent successfully!');
+                    } else {
+                        alert('There was an error sending your message. Please try again.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('There was an error sending your message. Please try again.');
+                });
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
